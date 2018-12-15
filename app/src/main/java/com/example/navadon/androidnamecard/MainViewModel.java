@@ -1,15 +1,17 @@
 package com.example.navadon.androidnamecard;
 
 import android.arch.lifecycle.ViewModel;
+import android.graphics.drawable.Drawable;
 
-public class MainMarkViewModel extends ViewModel {
+public class MainViewModel extends ViewModel {
 
     private String name;
     private String studentid;
     private String citizenid;
     private String faculty;
+    private Drawable image;
 
-    public MainMarkViewModel(){
+    public MainViewModel(){
 
     }
 
@@ -43,5 +45,13 @@ public class MainMarkViewModel extends ViewModel {
 
     public void setFaculty(String string) {
         this.faculty = string;
+    }
+
+    public Drawable getImage() {
+        return image;
+    }
+
+    public void setImage(Drawable image) {
+        this.image = image;
     }
 }

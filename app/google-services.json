@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "422415567085",
+    "firebase_url": "https://lionproject.firebaseio.com",
+    "project_id": "lionproject",
+    "storage_bucket": "lionproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:422415567085:android:d062e8a549525b40",
+        "android_client_info": {
+          "package_name": "com.example.navadon.androidnamecard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "422415567085-nfv30e2892oj2fb02vig9pajpo3aqdoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqDQKxItLeUlkqJMf95r0F6FC8aJmdiEg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,40 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.example.navadon.androidnamecard.MainViewModel" />
+    </data>
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-        <Button
-            android:id="@+id/btn_billy"
+        <LinearLayout
+            android:id="@+id/relativeLayout1"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/touch_target_size"
-            android:layout_marginBottom="@dimen/small_spacing"
-            android:text="@string/billy" />
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btn_mark"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/touch_target_size"
-            android:layout_marginBottom="@dimen/small_spacing"
-            android:text="@string/mark" />
+            <TextView
+                android:id="@+id/stdntCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top1"
+                android:text="@string/StdntCard"
+                android:textColor="@color/Title_color"
+                android:textSize="@dimen/text_size1" />
 
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/width_pic"
+                android:layout_height="@dimen/height_pic"
+                android:layout_marginTop="@dimen/margin_top4"
+                android:layout_marginBottom="@dimen/margin_top1" />
 
-</android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Name"
+                android:textColor="@color/Text_color"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_top1"
+                android:text="@{viewmodel.name}"
+                tools:text="@string/FullName1"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/Student_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/StudentID"
+                android:textColor="@color/Text_color"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/txtStudent_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_top1"
+                android:text="@{viewmodel.studentid}"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ID"
+                android:textColor="@color/Text_color"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/txtID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_top1"
+                android:text="@{viewmodel.citizenid}"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/Faculty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Faculty"
+                android:textColor="@color/Text_color"
+                android:textSize="@dimen/text_size2" />
+
+            <TextView
+                android:id="@+id/txtFaculty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_top1"
+                android:text="@{viewmodel.faculty}"
+                android:textSize="@dimen/text_size2" />
+
+            <Button
+                android:id="@+id/btn_next0"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:text="@string/next"
+                android:onClick="click"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>
+
+

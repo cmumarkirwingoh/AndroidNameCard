@@ -15,9 +15,9 @@
     <dimen name="text_normal">14sp</dimen>      <!-- @style/Base.TextAppearance.AppCompat.Body1 -->
 
     <dimen name="width_card">300dp</dimen>
-    <dimen name="height_card">400dp</dimen>
-    <dimen name="width_pic">100dp</dimen>
-    <dimen name="height_pic">100dp</dimen>
+    <dimen name="height_card">300dp</dimen>
+    <dimen name="width_pic">200dp</dimen>
+    <dimen name="height_pic">200dp</dimen>
     <dimen name="margin_top1">10dp</dimen>
     <dimen name="margin_top2">195dp</dimen>
     <dimen name="margin_top3">238dp</dimen>
